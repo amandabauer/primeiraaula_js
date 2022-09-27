@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Aula 1</title>
+</head>
+<body>
+<p>Manipulando o DOM:</p>
+<script type="text/javascript">
+function newDocument(){
+    var fraseValue = document.forms[0].frase.value;
+    document.open();
+    document.writeln(fraseValue);
+}
+</script>
+<br>
+<form>
+    <label for="frase">Cite sua frase favorita:</label>
+    <br>
+    <input type="text" name="frase" value="">
+    <br>
+    <br>
+    <input type="button" name="Citar" value="Citar" onClick="newDocument()">
+</form>
+</body>
+</html>
